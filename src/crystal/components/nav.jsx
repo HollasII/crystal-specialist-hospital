@@ -5,7 +5,7 @@ const Nav = () => {
 
         <nav className='nav-list'>
           <ul>
-            <li><a href="#">home</a></li>
+            <li><a href="#s">home</a></li>
             <li><a href="#services">service</a></li>
             <li><a href="o">crystal care</a></li>
             <li><a href="#about">about us</a></li>

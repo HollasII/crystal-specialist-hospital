@@ -21,19 +21,19 @@ const Footer = () => {
             <h3>services</h3>
             <ul>
               <li>
-                <a href="">home</a>
+                <a href="aa">home</a>
               </li>
               <li>
-                <a href="">services</a>
+                <a href="a">services</a>
               </li>
               <li>
-                <a href="">doctors</a>
+                <a href="a">doctors</a>
               </li>
               <li>
-                <a href="">crystal care</a>
+                <a href="a">crystal care</a>
               </li>
               <li>
-                <a href="">reviews</a>
+                <a href="a">reviews</a>
               </li>
             </ul>
           </li>
@@ -41,16 +41,16 @@ const Footer = () => {
             <h3>information</h3>
             <ul>
               <li>
-                <a href="">about us</a>
+                <a href="a">about us</a>
               </li>
               <li>
-                <a href="">privacy policy</a>
+                <a href="a">privacy policy</a>
               </li>
               <li>
-                <a href="">terms & conditions</a>
+                <a href="a">terms & conditions</a>
               </li>
               <li>
-                <a href="">FAQs</a>
+                <a href="a">FAQs</a>
               </li>
             </ul>
           </li>
