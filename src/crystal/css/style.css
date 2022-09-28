@@ -125,6 +125,91 @@ header .container .image-holder {
   border-radius: 20px;
 }
 
+.serviceClicked {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 50px;
+  font-family: "Roboto", sans-serif;
+}
+.serviceClicked h1 {
+  font-weight: 500;
+  font-size: 65px;
+  line-height: 80px;
+  color: #024827;
+  text-align: left;
+}
+.serviceClicked .service-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.serviceClicked .service-content .service-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.serviceClicked .service-content .service-text h2 {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 80px;
+  color: #024827;
+}
+.serviceClicked .service-content .service-text p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  color: #454242;
+}
+.serviceClicked .service-content .service-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.serviceClicked .service-content .service-list ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.serviceClicked .service-content .service-list ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 250px;
+  height: 250px;
+  box-shadow: 0px 3px 4px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 40px;
+  margin: 15px;
+}
+.serviceClicked .service-content .service-list ul li:hover {
+  background: #6EEFB1;
+}
+.serviceClicked .service-content .service-list ul li p {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 29px;
+  color: #024827;
+}
+.serviceClicked .service-content .service-list ul li:nth-of-type(1) {
+  margin-bottom: 60px;
+}
+.serviceClicked .service-content .service-list ul li:nth-of-type(2) {
+  margin-top: 70px;
+  margin-bottom: 40px;
+}
+.serviceClicked .service-content .service-list ul li:nth-of-type(3) {
+  margin-top: 120px;
+}
+
 .services {
   display: flex;
   align-items: center;
@@ -145,24 +230,7 @@ header .container .image-holder {
   justify-content: center;
 }
 .services .service-content .service-text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  align-items: flex-start;
   display: none;
-}
-.services .service-content .service-text h2 {
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 80px;
-  color: #024827;
-}
-.services .service-content .service-text p {
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 30px;
-  color: #454242;
 }
 .services .service-content .service-list {
   display: flex;

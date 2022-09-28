@@ -18,16 +18,14 @@ header{
   @include heading;
 }
 
-.services{
-  @include flexCol;
+.serviceClicked{
+  @include flexColStart;
   padding: 50px;
-  font-family: map-get($fonts, body);
+  font-family: map-get($fonts, body); 
 
   h1{
-    font-weight: 500;
-    font-size: 65px;
-    line-height: 80px;
-    color: map-get($colors, sub2);
+    @include serviceHead;
+    text-align: left;
   }
 
   .service-content{
@@ -49,6 +47,72 @@ header{
         line-height: 30px;
         color: map-get($colors, texts);
       }
+    }
+
+    .service-list{
+      @include flexCol;
+
+      ul{
+        @include flexer;
+        width: 100%;
+
+        li{
+          @include flexColEven;
+          width: 250px;
+          height: 250px;
+          box-shadow: 0px 3px 4px 5px rgba(0, 0, 0, 0.2);
+          border-radius: 40px;
+          margin: 15px;
+
+          &:hover{
+            background: map-get($colors, sub);
+          }
+          
+          // .active{
+          //   background: map-get($colors, sub);
+          // }
+          
+
+          p{
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 29px;
+            color: map-get($colors, sub2);
+          }
+
+          @include of-type(1){
+            margin-bottom: 60px;
+          }
+
+          @include of-type(2){
+            margin-top: 70px;
+            margin-bottom: 40px;
+          }
+
+          @include of-type(3){
+            margin-top: 120px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.services{
+  @include flexCol;
+  padding: 50px;
+  font-family: map-get($fonts, body);
+
+  h1{
+    @include serviceHead;
+  }
+
+  .service-content{
+    @include flexer;
+
+    .service-text{
+      
       display:none;
     }
 
@@ -65,6 +129,10 @@ header{
           box-shadow: 0px 3px 4px 5px rgba(0, 0, 0, 0.2);
           border-radius: 40px;
           margin: 15px;
+          
+          // &:active{
+          //   background: map-get($colors, sub);
+          // }
 
           p{
             text-transform: uppercase;
@@ -127,6 +195,8 @@ header{
 
   
 }
+
+
 
 .about-us{
   @include flexer;
