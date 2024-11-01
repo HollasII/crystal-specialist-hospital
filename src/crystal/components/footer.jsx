@@ -1,15 +1,16 @@
 import insta from '../../images/insta.svg';
 import mail from '../../images/mail.svg';
 import phone from '../../images/phone.svg';
+import logo from '../../images/LOGO 2.png';
 
 
 const Footer = () => {
   return(
     <footer>
-      <div>
-        <h1>CRYSTAL SPECIALIST HOSPITAL</h1>
-        <ul>
-          <li>
+      <div className="footDiv">
+        <img className='logo' src={logo} alt="" />
+        <ul id='li'>
+          <li id='li1'>
             <h3>contact us</h3>
             <ul>
               <li><a href="tel:+234-905-421-2352">09054212352</a></li>
@@ -17,7 +18,7 @@ const Footer = () => {
               <li>148/150 akowonjo rd, alimosho, lagos</li>
             </ul>
           </li>
-          <li>
+          <li id='li2'>
             <h3>services</h3>
             <ul>
               <li>
@@ -37,7 +38,7 @@ const Footer = () => {
               </li>
             </ul>
           </li>
-          <li>
+          <li id='li3'>
             <h3>information</h3>
             <ul>
               <li>
@@ -56,7 +57,7 @@ const Footer = () => {
           </li>
         </ul>
 
-        <ul>
+        <ul id='logo'>
           <li>
             <img src={insta} alt=""/>
           </li>

@@ -397,34 +397,34 @@ footer {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 50px;
+  gap: 10px;
+  padding: 50px 0;
   width: 100%;
 }
-footer div {
+footer .footDiv {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
+  gap: 20px;
 }
-footer div h1 {
-  width: 400px;
-  height: 76px;
-  font-size: 32px;
-  line-height: 38px;
-  font-weight: 700;
+footer .footDiv .logo {
+  width: 420px;
+  height: 96px;
+  align-self: left;
 }
-footer div a {
+footer .footDiv a {
   color: #ffffff;
 }
-footer div ul {
+footer .footDiv #li {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-footer div ul:nth-of-type(1) {
+footer .footDiv #li:nth-of-type(1) {
   font-family: "Open Sans", sans-serif;
 }
-footer div ul:nth-of-type(1) h3 {
+footer .footDiv #li:nth-of-type(1) h3 {
   font-family: "Open Sans", sans-serif;
   font-style: SemiBold;
   font-weight: 600;
@@ -433,20 +433,19 @@ footer div ul:nth-of-type(1) h3 {
   text-transform: uppercase;
   text-align: left;
 }
-footer div ul:nth-of-type(1) li {
+footer .footDiv #li:nth-of-type(1) li {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-footer div ul:nth-of-type(1) li ul {
+footer .footDiv #li:nth-of-type(1) li ul {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-footer div ul:nth-of-type(1) li:nth-of-type(1) ul {
-  width: -webkit-min-content;
+footer .footDiv #li:nth-of-type(1) li:nth-of-type(1) ul {
   width: -moz-min-content;
   width: min-content;
   text-align: left;

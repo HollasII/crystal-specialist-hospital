@@ -298,23 +298,28 @@ footer{
   background: map-get($map: $colors, $key: foot );
   color: #ffffff;
   @include flexCol;
-  padding: 50px;
+  gap: 10px;
+  padding: 50px 0;
   width: 100%;
 
-  div{
+  .footDiv{
+
     @include flexer;
     width: 100%;
+    gap: 20px;
     // align-items: left;
 
-    h1{
-     @include logo; 
+    .logo{
+      width: 420px;
+      height: 96px;
+      align-self: left;
     }
 
     a{
      color: #ffffff;         
     }
 
-    ul{
+    #li{
       @include flexer;
 
       @include of-type(1){
@@ -350,5 +355,7 @@ footer{
         }
       }
     }
+
+
   }
 }

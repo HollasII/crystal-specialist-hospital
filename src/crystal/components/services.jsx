@@ -14,34 +14,19 @@ import {useState} from 'react';
 
 const Service = () => {
   const [selected, setSelected] = useState(false);
-  // let change = useRef(null);
-  // const[title, setTitle] = useState("");
-  // useEffect(() => {
-  //   setTitle(change.current.children(0))
-  // })
-  const Changer = (e)=>{
+  const [serviceText, setServiceText] = useState("Our Services");
+  
+  const Changer = (e, text)=>{
     e.preventDefault()
-    const style = e.target;
-    if(selected === false){
-      
-      console.log(`you clicked ${style}`);
-    }
     setSelected( current => !current);
-    // let style={background: selected ? '#6EEFB1' : ''};
-    // if (selected === true){
-    //   setSelected(false)
-    //   // let style= {styleObject.li}
-      
-    // }else{
-    //   setSelected(true)
-    // }
+    setServiceText(text);
   }
   return(
     <section className={selected ? "serviceClicked" : "services"}>
       <h1>Our Services</h1>
       <div className='service-content'>
         <div className='service-text'>
-        <h2>j</h2>
+        <h2>{serviceText}</h2>
         <p>
           Syse infrans att dedade. Redar fäsat. Älogi hypol. Antere nydavarat och hemil. 
           Dist kyning. Kroska bröllopskoordinator. Teletotal. Mor tin. 
@@ -54,34 +39,40 @@ const Service = () => {
         </div>
         <div className='service-list'>
           <ul id='top-list'>
-            <li onClick={Changer}>
+            <li onClick={(e) => Changer(e, "ob/gyn")}
+              style={{ backgroundColor: selected && serviceText === "ob/gyn" ? '#6EEFB1' : '' }}>
               <img src={oby} alt='gynecology'/>
               {/* <div></div> */}
               <p>ob/gyn</p>
             </li>
-            <li  onClick={Changer}>
+            <li  onClick={(e) => Changer(e, "neurology")}
+              style={{ backgroundColor: selected && serviceText === "neurology" ? '#6EEFB1' : '' }}>
               <img src={neuro} alt='neurology' />
               {/* <div></div> */}
               <p>neurology</p>
             </li>
-            <li  onClick={Changer}>
+            <li  onClick={(e) => Changer(e, "pediatrics")}
+              style={{ backgroundColor: selected && serviceText === "pediatrics" ? '#6EEFB1' : '' }}>
               <img src={peds} alt='pediatrics' />
               {/* <div></div> */}
               <p>pediatrics</p>
             </li>
           </ul>
           <ul id='bottom-list'>
-            <li  onClick={Changer}>
+            <li  onClick={(e) => Changer(e, "dental care")}
+              style={{ backgroundColor: selected && serviceText === "dental care" ? '#6EEFB1' : '' }}>
               <img src={dental} alt='dental' />
               {/* <div></div> */}
               <p>dental care</p>
             </li>
-            <li  onClick={Changer}>
+            <li  onClick={(e) => Changer(e, "cardiology")}
+              style={{ backgroundColor: selected && serviceText === "cardiology" ? '#6EEFB1' : '' }}>
               <img src={cardio} alt='cardiology' />
               {/* <div></div> */}
               <p>cardiology</p>
             </li>
-            <li  onClick={Changer}>
+            <li  onClick={(e) => Changer(e, "ENT")}
+              style={{ backgroundColor: selected && serviceText === "ENT" ? '#6EEFB1' : '' }}>
               <img src={ent} alt='E.N.T' />
               {/* <div></div> */}
               <p>ent</p>
