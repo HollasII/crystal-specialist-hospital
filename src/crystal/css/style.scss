@@ -294,6 +294,13 @@ header{
   }
 }
 
+.success-message {
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+
 .modal {
   position: fixed;
   top: 0;
@@ -310,6 +317,17 @@ header{
     padding: 20px;
     border-radius: 8px;
     width: 300px;
+    @include flexCol;
+
+    form{
+      @include flexCol;
+      gap: 10px;
+
+      .but{
+        @include flexer;
+        gap: 10px;
+      }
+    }
   }
 }
 
@@ -318,6 +336,7 @@ footer{
   color: #ffffff;
   @include flexCol;
   padding: 20px 0;
+  gap: 30px;
   // align-items: start;
 
   .footDiv{
@@ -339,10 +358,25 @@ footer{
 
     #li{
       @include flexer;
+      gap: 15px;
+
+      h3{
+        text-transform: capitalize;
+      }
+
+      li{
+        width: 50%;
+      }
+
+      #li1{
+        @include flexCol;
+        
+      }
     }
 
     #logo{
       @include flexer;
+      gap: 10%;
     }
   }
   // background: map-get($map: $colors, $key: foot );

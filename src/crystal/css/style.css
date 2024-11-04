@@ -390,6 +390,12 @@ header .container .image-holder {
   color: #454242;
 }
 
+.success-message {
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
 .modal {
   position: fixed;
   top: 0;
@@ -406,6 +412,23 @@ header .container .image-holder {
   padding: 20px;
   border-radius: 8px;
   width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.modal .modal-content form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.modal .modal-content form .but {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
 footer {
@@ -416,6 +439,7 @@ footer {
   justify-content: center;
   flex-direction: column;
   padding: 20px 0;
+  gap: 30px;
 }
 footer .footDiv {
   display: flex;
@@ -437,9 +461,23 @@ footer .footDiv #li {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 15px;
+}
+footer .footDiv #li h3 {
+  text-transform: capitalize;
+}
+footer .footDiv #li li {
+  width: 50%;
+}
+footer .footDiv #li #li1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 footer .footDiv #logo {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 10%;
 }/*# sourceMappingURL=style.css.map */
